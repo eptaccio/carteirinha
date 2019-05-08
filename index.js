@@ -25,10 +25,6 @@ app.use((err, req, res, next) => {
 app.use('/user', userRoutes)
 app.use('/wallet', walletRoutes)
 
-app.get('/', async (req, res) => {
-  res.send('Hello World!')
-})
-
 app.listen(config.APP_PORT, function () {
   logger.info(`running on ${config.APP_PORT}`)
 })
